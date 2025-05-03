@@ -3,7 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,8 +29,12 @@ body {
     font-size: 14px;
 }
 
-.logo img {
-    height: 40px;
+.logo h2 {
+    color: white;
+    font-family: 'Akaya Telivigala', cursive !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
 }
 
 /* Navigation Styles */
@@ -38,6 +46,11 @@ body {
 
 .mobile-logo {
     display: none; /* Hide by default on desktop */
+    font-family: 'Akaya Telivigala', cursive !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
 }
 
 .menu-toggle {
@@ -54,15 +67,34 @@ body {
     gap: 30px;
 }
 
-.main-nav a {
+.nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
 }
 
-.main-nav a.active {
-    color: #ffffff;
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-links a.active::after {
+    transform: scaleX(1);
 }
 
 /* Dropdown Styles */
@@ -328,7 +360,11 @@ select, select option {
         display: block; /* Show on mobile */
         color: white;
         font-weight: bold;
-        font-size: 18px;
+        font-family: "Akaya Telivigala", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+
     }
 
     .nav-links {
@@ -341,6 +377,10 @@ select, select option {
         background-color: #2673e6;
         padding: 20px 0;
         z-index: 1000;
+    }
+
+    .nav-links a::after{
+        background-color: #2673e6;
     }
 
     .nav-links.active {
@@ -390,7 +430,20 @@ select, select option {
 
     .dropdown-content a {
         padding: 10px 0;
-        background-color: #1e3c72;
+        background-color: #2566db;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .brands-header p {
+        font-size: 14px;
     }
 }
 
@@ -550,7 +603,6 @@ select, select option {
 .feature-header {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 15px;
 }
 
@@ -937,10 +989,11 @@ select, select option {
 .footer-marketing a {
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 .footer-copyright a:hover,
-.footer-marketing a:hover {
+.footer-marketing a {
     text-decoration: underline;
 }
 
@@ -989,6 +1042,7 @@ select, select option {
 /* Consistent spacing */
 section {
     padding: 60px 0;
+    scroll-margin-top: 100px;
 }
 
 /* Smooth scrolling */
@@ -1020,6 +1074,8 @@ textarea:focus {
 /* Consistent text colors */
 h1, h2, h3, h4, h5, h6 {
     color: #2673e6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 .stat-item h3, .stat-item p{
@@ -1039,7 +1095,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Improved form field styles */
 input, select, textarea {
-    font-family: inherit;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Better box shadows */
@@ -1059,4 +1115,35 @@ select,
 textarea,
 button {
     border-radius: 8px;
+}
+
+.footer-copyright .business-hours {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-copyright .business-hours i {
+    margin-right: 5px;
+}
+
+.developer-link {
+    color: #ffffff !important;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.developer-link:hover {
+    opacity: 0.8;
+}
+
+.terms-link {
+    text-decoration: underline;
+    color: #2673e6;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.terms-link:hover {
+    color: #1e3c72;
 } 

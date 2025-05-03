@@ -3,7 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roy Repair Service</title>
+    <title>OneCall Repairs - Professional Appliance Repair Services in Mumbai</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="OneCall Repairs - Professional Appliance Repair Services in Mumbai">
+    <meta name="description" content="Expert appliance repair services in Mumbai. We repair AC, washing machines, refrigerators, and microwave ovens. 10+ years experience, 3000+ happy clients. Call now for doorstep service!">
+    <meta name="keywords" content="appliance repair, AC repair, washing machine repair, refrigerator repair, microwave repair, Mumbai, doorstep service, professional repair">
+    <meta name="author" content="OneCall Repairs">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://onecallrepairs.com/">
+    <meta property="og:title" content="OneCall Repairs - Professional Appliance Repair Services in Mumbai">
+    <meta property="og:description" content="Expert appliance repair services in Mumbai. We repair AC, washing machines, refrigerators, and microwave ovens. 10+ years experience, 3000+ happy clients.">
+    <meta property="og:image" content="https://onecallrepairs.com/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://onecallrepairs.com/">
+    <meta property="twitter:title" content="OneCall Repairs - Professional Appliance Repair Services in Mumbai">
+    <meta property="twitter:description" content="Expert appliance repair services in Mumbai. We repair AC, washing machines, refrigerators, and microwave ovens. 10+ years experience, 3000+ happy clients.">
+    <meta property="twitter:image" content="https://onecallrepairs.com/images/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://onecall-repairs.com/">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -15,7 +53,7 @@
             <i class="fas fa-phone"></i> Call Us: (+91) 9804637518
         </div>
         <div class="logo">
-            <img src="images/logo.png" alt="OneCall Repairs">
+            <h2>OneCall Repairs Pvt Ltd</h2>
         </div>
         <div class="contact-right">
             <i class="fas fa-phone"></i> Call Us: (+91) 8335903525
@@ -29,29 +67,29 @@
         </div>
         <div class="mobile-logo">OneCall Repairs</div>
         <ul class="nav-links">
-            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#home">HOME</a></li>
             <li class="services-dropdown">
-                <a href="#">SERVICES <i class="fas fa-chevron-down"></i></a>
+                <a href="#services">SERVICES <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="#">AC Repair Service</a>
-                    <a href="#">Washing Machine Repair Service</a>
-                    <a href="#">Refrigerator Repair Service</a>
-                    <a href="#">Microwave Oven Repair Service</a>
+                    <a href="#services">AC Repair Service</a>
+                    <a href="#services">Washing Machine Repair Service</a>
+                    <a href="#services">Refrigerator Repair Service</a>
+                    <a href="#services">Microwave Oven Repair Service</a>
                 </div>
             </li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#brands">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
-    <main>
+    <main id="home">
         <div class="hero-section">
             <div class="hero-content">
                 <h1>We Provide Professional<br>Appliances Repair Service</h1>
                 <ul class="features">
                     <li><i class="fas fa-check"></i> Multibrand Services</li>
-                    <li><i class="fas fa-check"></i> Door Steps Services</li>
+                    <li><i class="fas fa-check"></i> Door Step Services</li>
                     <li><i class="fas fa-check"></i> 90 Days Warranty</li>
                     <li><i class="fas fa-check"></i> Trained Technicians.</li>
                 </ul>
@@ -63,8 +101,8 @@
                 <h2>Free Callback Guarantee</h2>
                 <form id="serviceForm">
                     <div class="form-group">
-                        <select id="selectService" name="service">
-                            <option value="" disabled selected>Select Service</option>
+                        <select id="selectService" name="service">+
+                            <option value="" disabled selected>Select Appliance</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -80,13 +118,15 @@
                     <div class="form-section">
                         <div class="personal-details">
                             <input type="text" placeholder="Name" id="name" name="client_name">
-                            <input type="text" placeholder="Contact No." id="contact" name="client_contact">
+                            <input type="text" placeholder="Contact Number" id="contact" name="client_contact">
                         </div>
                         <input type="text" placeholder="Address" id="location" name="client_address">
                     </div>
                     <div class="checkbox">
                         <input type="checkbox" id="terms">
-                        <label for="terms">I agree to terms and condition</label>
+                        <label for="terms">
+                            I agree to <a href="privacy-policy.html" target="_blank" class="terms-link">terms and condition</a>
+                        </label>
                     </div>
                     <button type="submit" class="submit-btn">Submit Request</button>
                 </form>
@@ -102,7 +142,7 @@
                         <img src="./assets/images/rating.png" alt="Happy Clients">
                     </div>
                     <div class="stat-info">
-                        <h3>8000+</h3>
+                        <h3>3000+</h3>
                         <p>Happy Clients</p>
                     </div>
                 </div>
@@ -112,8 +152,8 @@
                         <img src="./assets/images/residential-home.png" alt="Residential Fridges">
                     </div>
                     <div class="stat-info">
-                        <h3>1600+</h3>
-                        <p>Repaired Fridges</p>
+                        <h3>3500+</h3>
+                        <p>Repaired Appliances</p>
                     </div>
                 </div>
     
@@ -140,42 +180,41 @@
         </section>
 
     <!-- Brands Section -->
-    <section class="brands-section">
-        
+    <section class="brands-section" id="brands" aria-label="Brands We Repair">
         <div class="brands-title">
             <h2>Appliance <span>Brands We Repair in Mumbai</span></h2>
         </div>
 
-        <div class="brands-grid">
-            <div class="brand-item">
-                <img src="./assets/images/carrier" alt="Haier" />
+        <div class="brands-grid" role="list">
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/carrier" alt="Carrier AC Repair" loading="lazy" />
             </div>
-            <div class="brand-item">
-                <img src="./assets/images/googrej" alt="Sansui" />
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/googrej" alt="Godrej Appliance Repair" loading="lazy" />
             </div>
-            <div class="brand-item">
-                <img src="./assets/images/lg" alt="LG" />
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/lg" alt="LG Appliance Repair" loading="lazy" />
             </div>
-            <div class="brand-item">
-                <img src="./assets/images/midea" alt="Samsung" />
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/midea" alt="Midea Appliance Repair" loading="lazy" />
             </div>
-            <div class="brand-item">
-                <img src="./assets/images/samsung" alt="Midea" />
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/samsung" alt="Samsung Appliance Repair" loading="lazy" />
             </div>
-            <div class="brand-item">
-                <img src="./assets/images/sansui" alt="Toshiba" />
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/sansui" alt="Sansui Appliance Repair" loading="lazy" />
             </div>
-            <div class="brand-item">
-                <img src="./assets/images/toshiba" alt="Voltas" />
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/toshiba" alt="Toshiba Appliance Repair" loading="lazy" />
             </div>
-            <div class="brand-item">
-                <img src="./assets/images/voltas" alt="Whirlpool" />
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/voltas" alt="Voltas AC Repair" loading="lazy" />
             </div>
-            <div class="brand-item">
-                <img src="./assets/images/whirlpool" alt="Godrej" />
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/whirlpool" alt="Whirlpool Appliance Repair" loading="lazy" />
             </div>
-            <div class="brand-item">
-                <img src="./assets/images/haier" alt="Carrier" />
+            <div class="brand-item" role="listitem">
+                <img src="./assets/images/haier" alt="Haier Appliance Repair" loading="lazy" />
             </div>
         </div>
 
@@ -263,7 +302,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact" aria-label="Contact Information">
         <div class="contact-header">
             <h2>Let's <span>Get in Touch</span></h2>
             <h4>Your feedback matters!</h4>
@@ -313,7 +352,7 @@
             <!-- Contact Details -->
             <div class="contact-details">
                 <h3>Our Contact Details</h3>
-                <p>Get in touch with us for all your Fridge repairing needs</p>
+                <p>Get in touch with us for all your Home Appliance repairing needs</p>
 
                 <div class="address">
                     <i class="fas fa-map-marker-alt"></i>
@@ -327,7 +366,7 @@
 
                 <div class="email">
                     <i class="fas fa-envelope"></i>
-                    <p>suvajitroy42@gmail.com</p>
+                    <p>dayanand42@gmail.com</p>
                 </div>
 
                 <div class="social-links">
@@ -344,15 +383,16 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-content">
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>Copyright © 2025 | OneCall Repairs | All Rights Reserved.</p>
+                    <p>Copyright © <span id="currentYear"></span> | OneCall Repairs | All Rights Reserved.</p>
+                    <p class="business-hours">Working Hours: 8:00 AM - 10:00 PM (7 Days a Week)</p>
                 </div>
                 
                 <div class="footer-marketing">
-                    <p>Developed with ❤️ by <a href="#">Adarsh Gupta</a></p>
+                    <p>Developed with ❤️ by <a href="https://gupta-adarsh.vercel.app/" target="_blank" rel="noopener noreferrer" class="developer-link">Adarsh Gupta</a></p>
                 </div>
 
             </div>
@@ -363,6 +403,59 @@
     <!-- Add SweetAlert2 for better alerts -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        // Structured Data for Local Business
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "OneCall Repairs",
+            "image": "https://onecallrepairs.com/images/logo.png",
+            "description": "Professional appliance repair services in Mumbai",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Aakruti Building",
+                "addressLocality": "Mulund East",
+                "addressRegion": "Mumbai",
+                "postalCode": "400081",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "19.1700",
+                "longitude": "72.9600"
+            },
+            "url": "https://onecallrepairs.com",
+            "telephone": "+918335903525",
+            "priceRange": "$$",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "20:00"
+            },
+            "sameAs": [
+                "https://www.facebook.com/onecallrepairs",
+                "https://www.instagram.com/onecallrepairs",
+                "https://twitter.com/onecallrepairs",
+                "https://www.youtube.com/onecallrepairs"
+            ]
+        };
+
+        // Add structured data to the page
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(structuredData);
+        document.head.appendChild(script);
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
         const scriptURL = "https://script.google.com/macros/s/AKfycbwxaPRGjof5L9d9aZpPUkqBQhB33nHX1X3r7ZB5_M-DVPVNlMHgiWvMjq3QRA2FwtSzKg/exec";
         const form = document.forms["serviceForm"];
 
