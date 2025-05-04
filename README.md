@@ -30,12 +30,7 @@ It provides a platform for users to request a callback for appliance repair serv
 - **Data Cleaning:** Used Python (Pandas) to clean and preprocess raw data from Google Sheets.
 - **Exploratory Data Analysis:** Identified trends, peak service times, top brands, and customer satisfaction drivers.
 - **BI Dashboard:** [View the interactive dashboard](#) (add your link here)
-- **Key Insights:**
-  - AC repairs spike in May-June.
-  - 60% of requests are for Samsung and LG appliances.
-  - 80% of customers are repeat clients.
-  - Feedback sentiment is 4.5/5 on average.
-- **Business Recommendations:** (List your recommendations here)
+- **Key Insights:** Private data
 
 ---
 
