@@ -350,6 +350,10 @@ select, select option {
         padding: 15px 20px;
     }
 
+    .hero-content h1 {
+        margin-bottom: 0;
+    }
+
     .menu-toggle {
         display: block;
         width: auto;
@@ -899,6 +903,7 @@ select, select option {
     color: white;
     border-radius: 5px;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .social-icons a:hover {
@@ -1042,7 +1047,6 @@ select, select option {
 /* Consistent spacing */
 section {
     padding: 60px 0;
-    scroll-margin-top: 100px;
 }
 
 /* Smooth scrolling */
@@ -1146,4 +1150,8 @@ button {
 }
 .terms-link:hover {
     color: #1e3c72;
-} 
+}
+
+#contactUS {
+  scroll-margin-top: -40px;
+}

@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>OneCall Repairs - Privacy Policy</h1>
+        <h1>OneCall Repairs Pvt Ltd - Privacy Policy</h1>
     </header>
     <main>
         <section id="introduction">
@@ -79,7 +79,16 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 OneCall Repairs</p>
+        <p>&copy; <span class="current-year"></span> OneCall Repairs Pvt Ltd</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var yearSpans = document.querySelectorAll('.current-year');
+          var year = new Date().getFullYear();
+          yearSpans.forEach(function(span) {
+            span.textContent = year;
+          });
+        });
+      </script> 
 </body>
 </html> 

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const callUsBtn = document.querySelector('.call-us-btn');
     if (callUsBtn) {
         callUsBtn.addEventListener('click', () => {
-            window.location.href = 'tel:+919804637518';
+            window.location.href = 'tel:+919967513480';
         });
     }
 
